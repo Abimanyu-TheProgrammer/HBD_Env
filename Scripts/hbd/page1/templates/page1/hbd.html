@@ -1,0 +1,56 @@
+{% load static %}
+<html>
+
+    <head>
+        <title>Buat Syasya</title>
+        <link rel="stylesheet" type="text/css" media="screen and (max-device-width : 600px)" href="{% static 'page1/mobile.css' %}">
+        <link rel="stylesheet" type="text/css" media="screen and (min-device-width : 601px)" href="{% static 'page1/desktop.css' %}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     </head>
+
+<body onload="renderTime();">
+    
+    <section>
+        <div class="set noSelect">
+            <div><img src="{%static 'images/leaves.png'%}"></div>
+            <div><img src="{%static 'images/leaves2.png'%}"></div>
+            <div><img src="{%static 'images/leaves3.png'%}"></div>
+            <div><img src="{%static 'images/leaves4.png'%}"></div>
+            <div><img src="{%static 'images/leaves.png'%}"></div>
+            <div><img src="{%static 'images/leaves2.png'%}"></div>
+            <div><img src="{%static 'images/leaves3.png'%}"></div>
+            <div><img src="{%static 'images/leaves4.png'%}"></div>
+        </div>
+
+        <div class="set set2 noSelect">
+            <div><img src="{%static 'images/leaves.png'%}"></div>
+            <div><img src="{%static 'images/leaves2.png'%}"></div>
+            <div><img src="{%static 'images/leaves3.png'%}"></div>
+            <div><img src="{%static 'images/leaves4.png'%}"></div>
+            <div><img src="{%static 'images/leaves.png'%}"></div>
+            <div><img src="{%static 'images/leaves2.png'%}"></div>
+            <div><img src="{%static 'images/leaves3.png'%}"></div>
+            <div><img src="{%static 'images/leaves4.png'%}"></div>
+        </div>
+
+        <div class="set set3 noSelect">
+            <div><img src="{%static 'images/leaves.png'%}"></div>
+            <div><img src="{%static 'images/leaves2.png'%}"></div>
+            <div><img src="{%static 'images/leaves3.png'%}"></div>
+            <div><img src="{%static 'images/leaves4.png'%}"></div>
+            <div><img src="{%static 'images/leaves.png'%}"></div>
+            <div><img src="{%static 'images/leaves2.png'%}"></div>
+            <div><img src="{%static 'images/leaves3.png'%}"></div>
+            <div><img src="{%static 'images/leaves4.png'%}"></div>
+        </div> 
+
+        <div class="container">
+            <div id="clockDisplay" class="clock noSelect"></div>
+            <div><span class="typed-text"></span><span class="cursor">&nbsp</span></div>
+        </div>
+    </section>
+        
+    <script type="text/javascript" src="{% static 'page1/clock.js'%}"></script>
+    <script type="text/javascript" src="{% static 'page1/bday.js'%}"></script>
+</body>
+</html>
